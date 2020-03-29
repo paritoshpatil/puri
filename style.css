@@ -1,0 +1,128 @@
+body {
+	background-image: linear-gradient(#00000099, rgba(0, 0, 0, 0.8)), url(back1.jpg);
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+.container {
+	width: 400px;
+	margin: auto;
+	padding: 10% 0 0;
+}
+
+.input-form {
+	position: relative;
+	z-index: 1;
+	background: rgba(233, 30, 100, 0.5);
+	margin: 0 auto 100px;
+	padding-left: 30px;
+	padding-right: 50px;
+	padding-top: 5px;
+	padding-bottom: 30px;
+	max-width: 400px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.input-form input {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	background: #f2f2f2;
+	border: 0;
+	border-radius: 5px;
+	width: 100%;
+	margin: 0 0 10px;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.input-form h1 {
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: none;
+	text-align: center;
+}
+
+.input-form button {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	outline: 0px;
+	border: 0px;
+	border-radius: 5px;
+	width: 70%;
+	padding: 10px;
+	background: #f2f2f2;
+	cursor: pointer;
+	color: #c2185b;
+	text-align: center;
+}
+
+.input-form button:hover,
+.input-form button:active {
+	background: #f8bbd0;
+}
+
+.text p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	color: #f2f2f2;
+}
+
+.text a {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	color: #448aff;
+}
+
+.input-form .register-form {
+	display: none;
+}
+
+.checkbox-label {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #f2f2f2;
+	display: block;
+	position: relative;
+	padding-left: 20px;
+	cursor: pointer;
+	margin-bottom: 12px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+.checkbox-label input {
+	height: 0;
+	width: 0;
+	cursor: pointer;
+	position: relative;
+}
+
+.checkmark {
+	height: 25px;
+	width: 25px;
+	background-color: #f2f2f2;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+
+.checkbox-label input:hover ~ .checkmark {
+	background-color: #c2185b;
+}

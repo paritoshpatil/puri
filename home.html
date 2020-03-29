@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LeadBlog Login</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Raleway:300i,400,700&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+       <div class="container">
+           <div class="input-form">
+                <form class="register-form" action="insert-user.php" method="POST">
+                    <h1>Register</h1>
+                    <input type="text" placeholder="email-id" name="email">
+                    <input type="text" placeholder="username" name="username">
+                    <input type="text" placeholder="password" name="password">
+                    <label class="checkbox-label">
+                        <input type="checkbox" checked="checked">
+                        I agree with the terms and conditions.
+                        <span class="checkmark"></span>
+                    </label>
+                    <button>create</button>
+                    <div class="text">
+                        <p>Already have an account? <a href="#">Login.</a></p>
+                    </div>
+                </form>
+
+                <form class="login-form">
+                    <h1>Login</h1>
+                    <input type="text" placeholder="username">
+                    <input type="text" placeholder="password">
+                    <button>Login</button>
+                    <div class="text">
+                        <p>Don't have an account? <a href="#">Register.</a></p>
+                    </div>
+                </form>
+           </div>
+       </div> 
+
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+       <script>
+       $('.text a').click(function(){
+           $('.login-form').animate({height : 'toggle', opacity : 'toggle'}, 'slow');
+           $('.register-form').animate({height : 'toggle', opacity : 'toggle'}, 'slow');
+       });
+       </script>
+    </body>
+</html>
